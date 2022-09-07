@@ -1,0 +1,405 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+:root {
+  --color-dark: #111111;
+  --color-secondary-dark: #1e1e1e;
+  --color-red: #c91b28;
+  --color-white: #fff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  padding: 2rem 5rem;
+}
+
+
+
+/* *********** header ************** */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 20rem;
+}
+
+.menu-item {
+  padding-right: 2rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+
+/* ************** Hero section ********* */
+.main-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.person-img {
+  width: 80%;
+}
+
+
+.hero-name {
+  color: var(--color-red);
+}
+
+.hero-job {
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+
+.hero-profile {
+  font-size: 0.8rem;
+}
+
+.about-me-btn {
+  background-color: var(--color-red);
+  margin-top: 1rem;
+  color: var(--color-white);
+  padding: 0.8rem 1.5rem;
+  border: none;
+}
+
+/*  profile-statics  */
+
+.profile-statics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 6rem;
+  margin: 5rem 0;
+}
+
+.profile-statics::before {
+  content: '';
+  width: 40rem;
+  height: 38rem;
+  background-color: var(--color-secondary-dark);
+  position: absolute;
+  left: 0;
+  top: 44rem;
+  z-index: -1;
+}
+
+.card-1-link {
+
+  color: var(--color-white);
+  margin-top: 1rem;
+}
+
+.card-1 {
+  background-color: #393939;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: baseline;
+}
+.card-1-heading{
+  padding: 1rem 0;
+}
+a{
+  text-decoration: none;
+}
+.card-1>img {
+  width: 3rem;
+}
+
+.card-active {
+  background-color: var(--color-red);
+}
+
+.card-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  grid-column: 2/-1;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-2-heading{
+  color:var(--color-red);
+  font-size: 4rem;
+  font-weight: 900;
+}
+.card-3-heading{
+  color: var(--color-red);
+  font-size: 2rem;
+}
+.card-3-4 {
+  background-color: #393939;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ********** portfolio ********** */
+
+.portfolio-view-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.portfolio-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: space-around;
+  justify-items: end;
+  align-items: center;
+}
+
+.featured-project {
+  margin-left: 3rem;
+}
+
+.featured-desc {
+  font-size: 0.8rem;
+  color: #787878;
+}
+
+.project-img {
+  height: 20rem;
+  width: 25rem;
+  padding: 5rem 2rem;
+  background-color: var(--color-secondary-dark);
+}
+
+.view-all {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  padding: 0.8rem 1.5rem;
+}
+
+.project-know-more {
+  color: var(--color-red);
+  font-size: 0.8rem;
+}
+
+
+
+
+/* ************** contact ************** */
+
+.contact {
+  margin-top: 5rem;
+  padding: 5rem 4rem;
+  margin-bottom: 5rem;
+  background-color: var(--color-secondary-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.contact-info {
+  width: 80%;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.contact-text {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #8d8c8c;
+}
+
+.contact-btn-link {
+  background-color: var(--color-red);
+  border: none;
+  padding: 0.7rem 2.2rem;
+  color: var(--color-white);
+  font-size: 1rem;
+  margin-right: 5rem;
+}
+
+
+
+/* ************footer************* */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.footer-item {
+  padding: 0 1.5rem;
+  font-size: 0.7rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color:var(--color-secondary-dark);
+  padding: 2rem 5rem;
+}
+.footer-logo{
+  position: absolute;
+  left: 5rem;
+}
+.footer-logo-img{
+  width: 60%;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.social-icon{
+  padding-right: 2rem;
+}
+
+
+
+
+
+
+/* **************************
+ media screen
+************************** */
+
+@media screen and(max-width:1150px) {
+  .container{
+    padding: 1rem 2rem;
+  }
+  .menu-items{
+    margin: 0;
+  }
+  .menu-item{
+    margin: 0;
+  }
+
+}
+@media screen and (max-width:1000px) {
+  .container{
+    padding: 1rem;
+  }
+  .menu-items{
+    display: none;
+  }
+  .main-container{
+    /* padding: ; */
+  }
+}
+
+@media screen and (max-width:850px) {
+  .portfolio{
+    padding: auto;
+  }
+  .portfolio>div{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .portfolio-view-all{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-info{
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-heading{
+    font-size: 1rem;
+  }
+  .contact-btn-link{
+    margin-top: 2rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .nav-menu{
+    justify-content: center;
+    
+  }
+  .hero-name-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .profile-statics {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1;
+    padding: 2rem 6rem;
+}
+.profile-statics::before{
+  background:none;
+}
+
+.card-1{
+     grid-column: 12/1;
+}
+.card-2{
+  grid-column: 12/1;
+}
+.card-3{
+  grid-column: 12/1;
+}
+  .person-img{
+    display: none;
+  }
+}
